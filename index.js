@@ -11,6 +11,9 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 // index
 app.get("/compliments", complimentsController.index);
 
+// edit
+app.get('/compliments/:id/edit', complimentsController.edit);
+
 // root
 app.get("/", function(req, res){
   res.redirect("/compliments")
