@@ -20,9 +20,7 @@ var complimentsController = {
     res.redirect("/compliments")
   },
 
-  2c9y8nrqw qwe cqwe cqwqw{
-    asdfnasdf
-  }
+
   update: function(req, res){
     var compliment = Compliment.update(req.body.compliment)
     res.redirect('/compliments');
@@ -30,6 +28,7 @@ var complimentsController = {
   // edit action code goes here...
 
   // I created this method!
+  // and i added a second comment
   edit: function(req, res){
     res.render("/compliments/edit.hbs", {
       compliment: Compliment.find([req.params.id]);
