@@ -20,7 +20,11 @@ var complimentsController = {
     res.redirect("/compliments")
   }
   // edit action code goes here...
-
+  edit: function(req, res){
+    res.render("/compliments/edit.hbs", {
+      compliment: Compliment.find([req.params.id]);
+    });
+  }
  // update action code goes here...
 }
 
