@@ -20,9 +20,15 @@ var complimentsController = {
     res.redirect("/compliments")
   },
 
+  // this is random code that doesn't do anything
   2c9y8nrqw qwe cqwe cqwqw{
     asdfnasdf
-  }
+  },
+
+
+
+
+
   update: function(req, res){
     var compliment = Compliment.update(req.body.compliment)
     res.redirect('/compliments');
