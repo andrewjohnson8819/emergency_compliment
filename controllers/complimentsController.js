@@ -19,6 +19,10 @@ var complimentsController = {
     // redirect to compliment
     res.redirect("/compliments")
   },
+
+  2c9y8nrqw qwe cqwe cqwqw{
+    asdfnasdf
+  }
   update: function(req, res){
     var compliment = Compliment.update(req.body.compliment)
     res.redirect('/compliments');
